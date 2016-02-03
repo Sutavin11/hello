@@ -15,6 +15,26 @@
         <next>
           <block type="oled_drawtext" id="45">
             <field name="TEXT">I will move forward</field>
+            <next>
+              <block type="led_select" id="158" inline="true">
+                <field name="ACTION">ON</field>
+                <value name="LED">
+                  <block type="math_number" id="160">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="led_select" id="159" inline="true">
+                    <field name="ACTION">ON</field>
+                    <value name="LED">
+                      <block type="math_number" id="161">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
